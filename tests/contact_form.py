@@ -112,7 +112,7 @@ def test_case_four():
     
     name_field.send_keys("Sample User")
     email_field.send_keys("sampleemail@provider.com")
-    phone_field.send_keys("11 12mf 1q4zx")
+    phone_field.send_keys("12345")
     subject_field.send_keys("Room Inquiry")
     text_field.send_keys("This is a sample message to inquire about room availability. Please use user info to contact.")
     submit_button.click()
@@ -124,14 +124,14 @@ def test_four_validate():
     else:
         print('Test Case 4... -> Fail')        
          
-        
-get_index_page()
-test_case_one()
-test_one_validate()   
-test_case_two()   
-test_two_validate()  
-test_case_three()
-test_three_validate()
-test_case_four()
-test_four_validate()
-        
+def run_contact_form_tests():        
+    get_index_page()
+    test_case_one()
+    test_one_validate()   
+    test_case_two()   
+    test_two_validate()  
+    test_case_three()
+    test_three_validate()
+    test_case_four()
+    test_four_validate()
+            
