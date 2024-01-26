@@ -124,7 +124,7 @@ def test_four_validate():
     else:
         print('Test Case 4... -> Fail')        
          
-def run_contact_form_tests():        
+if __name__ == '__main__':        
     get_index_page()
     test_case_one()
     test_one_validate()   
